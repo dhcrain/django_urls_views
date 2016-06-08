@@ -16,6 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from urls_views_app import views
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.index_view),
+    url(r'^hello$', views.hello_view),
+    url(r'^99/red/balloons$', views.red_baloons_view),
 ]
