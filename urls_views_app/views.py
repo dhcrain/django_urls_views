@@ -10,8 +10,8 @@ def index_view(request):
 
 
 def hello_view(request):
-    return HttpResponse("Hello, Hello, Hello, Hello, Hello, Hello, Hello, Hello World!")
-    # return render(request, 'test_temp/yippee.html', {})
+    # return HttpResponse("Hello, Hello, Hello, Hello, Hello, Hello, Hello, Hello World!")
+    return render(request, 'test_temp/yippee.html', {})
 
 
 def red_baloons_view(request):

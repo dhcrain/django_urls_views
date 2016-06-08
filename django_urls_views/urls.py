@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from urls_views_app import views
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
@@ -24,4 +25,5 @@ urlpatterns = [
     url(r'^$', views.index_view),
     url(r'^hello$', views.hello_view),
     url(r'^99/red/balloons$', views.red_baloons_view),
+    url(r'^temp$', TemplateView.as_view(template_name='test_temp/yippee.html')),
 ]
